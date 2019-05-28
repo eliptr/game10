@@ -52,10 +52,10 @@ function test() {
   // positions var
   bX = 200;
   bY = 100;
-  gravity = 0.88;
+  gravity = 0.94;
   gravitySpeed = 0;
   bounce = 0.6;
-  test = 20;
+  test = 45;
   draw()
 }
 
