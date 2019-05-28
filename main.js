@@ -50,12 +50,12 @@ function test() {
   canvasMain.style.height = windowHeight + 'px';
 
   // positions var
-  bX = 200;
+  bX = 300;
   bY = 100;
-  gravity = 0.94;
+  gravity = 0.98;
   gravitySpeed = 0;
   bounce = 0.6;
-  test = 45;
+  test = 42;
   draw()
 }
 
