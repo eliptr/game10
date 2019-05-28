@@ -20,34 +20,34 @@ function onResume() {
 }
 
 //variabels
-// var windowWidth = window.innerWidth;
-// var windowHeight = window.innerHeight;
-// var windowWidth = window.innerWidth;
-// var windowHeight = window.innerHeight;
-// var pixelRatio = window.devicePixelRatio || 1; /// get pixel ratio of device
+var windowWidth = window.innerWidth;
+var windowHeight = window.innerHeight;
+var windowWidth = window.innerWidth;
+var windowHeight = window.innerHeight;
+var pixelRatio = window.devicePixelRatio || 1; /// get pixel ratio of device
 
 // load images
 var ball = new Image();
 var bg = new Image();
 
-ball.src = "images/ball.png";
-bg.src = "images/bg.png";
+ball.src = "images/ball2.png";
+bg.src = "images/bg2.png";
 
 
 
 // onlaod runs one time and in the end runs draw with requestAnimationFrame
 function test() {
-  // windowWidth = window.innerWidth;
-  // windowHeight = window.innerHeight;
-  // windowWidth = window.innerWidth;
-  // windowHeight = window.innerHeight;
-  // pixelRatio = window.devicePixelRatio || 1; /// get pixel ratio of device
+  windowWidth = window.innerWidth;
+  windowHeight = window.innerHeight;
+  windowWidth = window.innerWidth;
+  windowHeight = window.innerHeight;
+  pixelRatio = window.devicePixelRatio || 1; /// get pixel ratio of device
 
-  // // fixed canvas resolution
-  // canvasMain.width = windowWidth * pixelRatio;   /// resolution of canvas
-  // canvasMain.height = windowHeight * pixelRatio;
-  // canvasMain.style.width = windowWidth + 'px';   /// CSS size of canvas
-  // canvasMain.style.height = windowHeight + 'px';
+  // fixed canvas resolution
+  canvasMain.width = windowWidth * pixelRatio;   /// resolution of canvas
+  canvasMain.height = windowHeight * pixelRatio;
+  canvasMain.style.width = windowWidth + 'px';   /// CSS size of canvas
+  canvasMain.style.height = windowHeight + 'px';
 
   // positions var
   bX = 200;
@@ -62,10 +62,10 @@ function test() {
 // runs after test is finished and has an requestAnimationFrame
 function draw() {
 
-  // canvasMain.width = windowWidth * pixelRatio;   /// resolution of canvas
-  // canvasMain.height = windowHeight * pixelRatio;
-  // canvasMain.style.width = windowWidth + 'px';   /// CSS size of canvas
-  // canvasMain.style.height = windowHeight + 'px';
+  canvasMain.width = windowWidth * pixelRatio;   /// resolution of canvas
+  canvasMain.height = windowHeight * pixelRatio;
+  canvasMain.style.width = windowWidth + 'px';   /// CSS size of canvas
+  canvasMain.style.height = windowHeight + 'px';
 
   gravitySpeed += gravity;
   bY += gravitySpeed;
@@ -87,7 +87,7 @@ function draw() {
 document.getElementById("canvas").addEventListener("click", cl);
 
 function hitbottom() {
-  var rockbottom = canvas.height - 50;
+  var rockbottom = canvasMain.height - 100;
   if (bY > rockbottom) {
     bY = rockbottom;
     gravitySpeed = 0;
