@@ -90,8 +90,7 @@ function hitbottom() {
   var rockbottom = canvasMain.height - 100;
   if (bY > rockbottom) {
     bY = rockbottom;
-    gravitySpeed = 0;
-    // gravitySpeed = -(gravitySpeed * bounce);
+    gravitySpeed = -(gravitySpeed * bounce);
   }
 }
 
